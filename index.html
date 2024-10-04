@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Recipe Card</title>
+</head>
+<body>
+    <div class="recipe-card">
+        <h1>Chocolate Cake</h1>
+        <img src="cake.jpeg" alt="Chocolate Cake" class="recipe-image">
+        <div class="info">
+            <p><strong>Preparation Time:</strong> 30 minutes</p>
+            <p><strong>Serving Size:</strong> 8 servings</p>
+        </div>
+        <button id="toggle-ingredients">Show Ingredients</button>
+        <ul class="ingredients hidden">
+            <li>200 grams golden caster sugar</li>
+            <li>200 grams unsalted butter (softened, plus extra for the tins)</li>
+            <li>4 large eggs</li>
+            <li>200 grams self-raising flour</li>
+            <li>1/2 cup cocoa powder</li>
+            <li>½ teaspoon vanilla extract</li>
+            <li>4 tablespoons milk</li>
+        </ul>
+        <button id="start-cooking">Start Cooking</button>
+        <div class="steps">
+            <div class="step hidden">Preheat the oven to 350°F (175°C).</div>
+            <div class="step hidden">Mix sugar and unsalted butter until smooth.</div>
+            <div class="step hidden">Add eggs one at a time, beating well.</div>
+            <div class="step hidden">In another bowl, mix self-raising flour and cocoa powder.</div>
+            <div class="step hidden">Then add the vanilla extract.</div>
+            <div class="step hidden">Combine all ingredients and pour into a baking pan.</div>
+            <div class="step hidden">Bake for 30 minutes.</div>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
